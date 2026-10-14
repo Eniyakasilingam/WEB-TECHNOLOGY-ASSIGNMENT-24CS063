@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <main class="container">
+
+        <section class="form-card">
+
+            <div class="logo">✦</div>
+
+            <p class="subtitle">WELCOME TO YOUR FUTURE</p>
+
+            <h1>Student Admission</h1>
+
+            <p class="description">
+                Register today and take the first step toward your dreams.
+            </p>
+
+            <form id="registrationForm" novalidate>
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name"
+                           placeholder="Enter your full name">
+                    <small class="error" id="nameError"></small>
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="roll">Roll Number</label>
+                        <input type="text" id="roll"
+                               placeholder="e.g. 23CS101">
+                        <small class="error" id="rollError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email"
+                               placeholder="you@example.com">
+                        <small class="error" id="emailError"></small>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Select Course</label>
+
+                    <select id="course">
+                        <option value="">Choose your course</option>
+                        <option value="CSE">Computer Science Engineering</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="ECE">Electronics and Communication</option>
+                        <option value="EEE">Electrical Engineering</option>
+                        <option value="MECH">Mechanical Engineering</option>
+                        <option value="AIDS">AI and Data Science</option>
+                    </select>
+
+                    <small class="error" id="courseError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Create Password</label>
+
+                    <input type="password" id="password"
+                           placeholder="Enter a strong password">
+
+                    <div class="strength-track">
+                        <div id="strengthBar"></div>
+                    </div>
+
+                    <small id="strengthText">Password strength</small>
+                    <small class="error" id="passwordError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="document">Upload Student Document</label>
+
+                    <input type="file" id="document"
+                           accept=".pdf,.jpg,.jpeg,.png">
+
+                    <small class="hint">
+                        PDF, JPG or PNG · Maximum 2 MB
+                    </small>
+
+                    <small class="error" id="documentError"></small>
+                </div>
+
+                <button type="submit" id="submitBtn">
+                    Submit Application <span>→</span>
+                </button>
+
+                <p id="successMessage" role="status"></p>
+
+            </form>
+
+            <p class="footer-text">
+                © 2026 Student Admission Portal
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
